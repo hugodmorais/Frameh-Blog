@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>App HM</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+  <head>
+    <title>App HM</title>
+    <%= stylesheet_link_tag    "application", :media => "all", 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
 
-</head>
-<body>
-  <%= render 'layouts/navigation' %>
-  <%= link_to "Hm Articles", articles_path %>
-  <%= render 'layouts/messages' %>
-  <%= yield %>
-</body>
-</html>
+  <body>
+    <%= render 'layouts/navigation' %>
+    <%= render 'layouts/messages' %>
+
+    <div class="container">
+      <%= yield %>
+    </div>
+    <%= render 'layouts/footer' %>
+  </body>
 </html>
 
 

@@ -1,16 +1,71 @@
 @import "bootstrap";
 
+body {
+    background: #e6e6e6;
+}
 #logo {
     float: left;
     font-size: 1.7em;
-    color: #fff;
+    color: rgb(59, 50, 50);
     text-transform: uppercase;
     letter-spacing: -1px;
     font-weight: bold;
+    margin-left: 25px;
 }
 
 #logo:hover {
     color: #fff;
     text-decoration: none;
+}
+
+.navbar {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.navbar .collapse{
+    margin-left: 40px;
+    font-weight: bold;
+}
+
+#navbarSupportedContent li a{
+    color: rgb(59, 50, 50);
+}
+
+.center {
+    text-align: center;
+}
+
+.jumbotron {
+    background-image: asset-url('jumbo');
+    background-size: cover;
+    height: 670px;
+}
+
+.jumbotron h1 {
+    margin-top: 4em;
+    color: #fff;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+#button {
+    background-color: #e6e6e6;	
+    color: #4d4d4d;
+    border-color: #4d4d4d;
+}
+
+#button:hover {
+    background-color: #fff;	
+    color: #000;
+    border-color: #000;
+}
+
+.footer {    
+    color: #777;
+}
+
+.footer a {    
+    color: rgb(59, 50, 50);
 }
 
