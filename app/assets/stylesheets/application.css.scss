@@ -10,7 +10,7 @@ body {
     text-transform: uppercase;
     letter-spacing: -1px;
     font-weight: bold;
-    margin-left: 25px;
+    margin-left: 15px;
 }
 
 #logo:hover {
@@ -24,7 +24,7 @@ body {
 }
 
 .navbar .collapse{
-    margin-left: 40px;
+    margin-left: 20px;
     font-weight: bold;
 }
 
@@ -39,7 +39,7 @@ body {
 .jumbotron {
     background-image: asset-url('jumbo');
     background-size: cover;
-    height: 670px;
+    height: 510px;
 }
 
 .jumbotron h1 {
