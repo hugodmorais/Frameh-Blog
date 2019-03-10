@@ -1,11 +1,4 @@
-<% if @article.errors.any? %>
-<ul>
-    <!-- Show errors if not submit --> 
-    <% @article.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-    <% end %>
-</ul>
-<% end %>
+<%= render 'shared/errors', obj: @article %>
 
 <%= form_for @article do |f| %>
     <div class="form-group row form_article">
