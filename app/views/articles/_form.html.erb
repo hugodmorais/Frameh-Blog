@@ -8,7 +8,7 @@
 <% end %>
 
 <%= form_for @article do |f| %>
-    <div class="form-group row">
+    <div class="form-group row form_article">
         <div class="col-sm-2">
             <%= f.label :title %>
         </div>
@@ -24,6 +24,10 @@
             <%= f.text_area :description, rows: 8, class: "form-control", placeholder: "Description of Article" %>
         </div>
     </div>
+    <div class="form-group">
+        <div class="col-md-4 offset-md-2">
+            <%= f.submit class: 'btn btn-primary' %>
+            <%= link_to 'Cancel', articles_path %>
+        </div>
+    </div>
 <% end %>
-
-

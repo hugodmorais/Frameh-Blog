@@ -61,8 +61,16 @@ body {
     border-color: #000;
 }
 
+.form-horizontal {
+    margin-top: 2em;
+}
+
 .footer {    
     color: #777;
+    position: fixed;
+    bottom: 2em;
+    width: 80%;
+    left: 10em;;
 }
 
 .footer a {    
