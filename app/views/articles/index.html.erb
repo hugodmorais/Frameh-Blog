@@ -1,10 +1,11 @@
 <h1 align="center">Listning all articles</h1>
-
-<p>
-    <%= link_to "Create new article", new_article_path %>
-</p>
 <div class="well rounded">
     <h4 align="center">Articles</h4>
+    <div id="one">
+        <%= link_to new_article_path do %>
+            <i class="fa fa-file"></i> New
+        <% end %>
+    </div>
     <table class="table">
         <tr>
             <th>Id</th>
@@ -18,11 +19,11 @@
                 <td><%= article.title %></td>
                 <td><%= article.description %></td>
                 <td>
-                    <%= link_to edit_article_path(article) do %>
-                        <i class="fa fa-edit"></i> 
-                    <% end %>
                     <%= link_to article_path(article)  do %>
                         <i class="fa fa-eye"></i> 
+                    <% end %>
+                    <%= link_to edit_article_path(article) do %>
+                        <i class="fa fa-edit"></i> 
                     <% end %>
                     <%= link_to article_path(article), method: :delete, data: { confirm: "Are you sure?" } do %>
                         <i class="fa fa-times"></i> 
