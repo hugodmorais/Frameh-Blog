@@ -1,4 +1,6 @@
 @import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 body {
     background: #e6e6e6;
@@ -62,6 +64,16 @@ body {
 }
 
 .form-horizontal {
+    margin-top: 2em;
+}
+
+.table {
+    margin-top: 2em;
+}
+
+.well {
+    background: #fff;
+    padding: 1em;
     margin-top: 2em;
 }
 
